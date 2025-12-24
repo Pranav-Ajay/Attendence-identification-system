@@ -14,16 +14,16 @@
 <li><input id="sub9" type="text"></li>
 <li><input id="sub10" type="text"></li></ol>
 <button onclick=move()>SUBMIT</button>
-<script>let p1=documment.getElementById("sub1").innerHTML;
-let p2=documment.getElementById("sub2").innerHTML;
-let p3=documment.getElementById("sub3").innerHTML;
-let p4=documment.getElementById("sub4").innerHTML;
-let p5=documment.getElementById("sub5").innerHTML;
-let p6=documment.getElementById("sub6").innerHTML;
-let p7=documment.getElementById("sub7").innerHTML;
-let p8=documment.getElementById("sub8").innerHTML;
-let p9=documment.getElementById("sub9").innerHTML;
-let p10=documment.getElementById("sub10").innerHTML;
+<script>let p1=documment.getElementById("sub1").value;
+let p2=documment.getElementById("sub2").value;
+let p3=documment.getElementById("sub3").value;
+let p4=documment.getElementById("sub4").value;
+let p5=documment.getElementById("sub5").value;
+let p6=documment.getElementById("sub6").value;
+let p7=documment.getElementById("sub7").value;
+let p8=documment.getElementById("sub8").value;
+let p9=documment.getElementById("sub9").value;
+let p10=documment.getElementById("sub10").value;
 let list=[];
 list.push(p1);
 list.push(p2);
@@ -35,6 +35,7 @@ list.push(p7);
 list.push(p8);
 list.push(p9);
 list.push(p10);
+localStorage.setItem("subjects", JSON.stringify(list));
 function move(){
   window.location.href="Page1.html";}
 </script>
