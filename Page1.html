@@ -216,8 +216,8 @@
 <script>
 const storedString = localStorage.getItem("subjects");
 const List = JSON.parse(storedString);
-let in=document.querySelectorAll(">inp").value;
-if (!List.includes(in)){
+let inpu = document.querySelector("#inp").value.trim();
+if (!List.includes(inpu)){
       alert("Not a valid Subject");}
 p1=[p1];
 p2=[p2];
