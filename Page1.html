@@ -303,60 +303,67 @@ function add2(){
             p10.push("A");}
       let perc1=[];
 
-function calculate(){
+function calculate1(){
       count1=p1.filter(item => item === "P").length;
       count2=p1.length;
       percentage1=(count1/count2)*100;
+      return percentage1;}
+function calculate2(){
       count3=p2.filter(item => item === "P").length;
       count4=p2.length;
       percentage2=(count3/count4)*100;
+      return percentage2;}
+function calculate3(){
       count5=p3.filter(item => item === "P").length;
       count6=p3.length;
       percentage3=(count5/count6)*100;
+      return percentage3;}
+function calculate4(){
       count7=p4.filter(item => item === "P").length;
       count8=p4.length;
       percentage4=(count7/count8)*100;
+      return percentage4;}
+function calculate5(){
       count9=p5.filter(item => item === "P").length;
       count10=p5.length;
       percentage5=(count9/count10)*100;
+      return percentage5;}
+function calculate6(){
       count11=p6.filter(item => item === "P").length;
       count12=p6.length;
       percentage6=(count11/count12)*100;
+      return percentage6;}
+function calculate7(){
       count13=p7.filter(item => item === "P").length;
       count14=p7.length;
       percentage7=(count13/count14)*100;
+      return percentage7;}
+function calculate8(){
       count15=p8.filter(item => item === "P").length;
       count16=p8.length;
       percentage8=(count15/count16)*100;
+      return percentage8;}
+function calculate9(){
       count17=p9.filter(item => item === "P").length;
       count18=p9.length;
       percentage9=(count17/count18)*100;
+      return percentage9;}
+function calculate10(){
       count19=p10.filter(item => item === "P").length;
       count20=p10.length;
       percentage10=(count19/count20)*100;
-      perc1.push(percentage1);
-      perc1.push(percentage2);
-      perc1.push(percentage3);
-      perc1.push(percentage4);
-      perc1.push(percentage5);
-      perc1.push(percentage6);
-      perc1.push(percentage7);
-      perc1.push(percentage8);
-      perc1.push(percentage9);
-      perc1.push(percentage10);  
+      return percentage10;}
       
-      return perc1 ;
-      }
-document.getElementById("sub1").innertext=calculate(perc1[0]);
-document.getElementById("sub2").innertext=calculate(perc1[1]);
-document.getElementById("sub3").innertext=calculate(perc1[2]);
-document.getElementById("sub4").innertext=calculate(perc1[3]);
-document.getElementById("sub5").innertext=calculate(perc1[4]);
-document.getElementById("sub6").innertext=calculate(perc1[5]);
-document.getElementById("sub7").innertext=calculate(perc1[6]);
-document.getElementById("sub8").innertext=calculate(perc1[7]);
-document.getElementById("sub9").innertext=calculate(perc1[8]);
-document.getElementById("sub10").innertext=calculate(perc1[9]);
+document.getElementById("sub1").innertext=calculate1();
+document.getElementById("sub2").innertext=calculate2();
+document.getElementById("sub3").innertext=calculate3();
+document.getElementById("sub4").innertext=calculate4();
+document.getElementById("sub5").innertext=calculate5();
+document.getElementById("sub6").innertext=calculate6();
+document.getElementById("sub7").innertext=calculate7();
+document.getElementById("sub8").innertext=calculate8();
+document.getElementById("sub9").innertext=calculate9();
+document.getElementById("sub10").innertext=calculate10();
             
       
       
