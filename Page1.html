@@ -210,7 +210,7 @@
 <div>
 <h2>Percentage for each subject:</h2>
 <table border=1 width=300 height=100><tr><th class="hi">p1</th><th class="hi">p2</th><th class="hi">p3</th><th class="hi">p4</th><th class="hi">p5</th><th class="hi">p6</th><th class="hi">p7</th><th class="hi">p8</th><th class="hi">p9</th><th class="hi">p10</th></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+        <tr><td id="sub1"></td><td id="sub2"></td><td id="sub3"></td><td id="sub4"></td><td id="sub5"></td><td id="sub6"></td><td id="sub7"></td><td id="sub8"></td><td id="sub9"></td><td id="sub10"></td></tr></table>
 
 </div>
 <script>
@@ -274,7 +274,92 @@ function add1(){
        else if(inpu===p9Name){
             p9.push("P");}
        else if(inpu===p10Name){
-            p10.push("P");}
+            p10.push("P");}}
+
+
+function add2(){
+      const inputs = document.querySelectorAll(".inp");
+      inputs.forEach(input => {
+       const inpu = input.value.trim();
+       if(inpu===p1Nmae){
+            p1.push("A");}
+       else if(inpu===p2Name){
+            p2.push("A");}
+       else if(inpu===p3Name){
+            p3.push("A");}
+       else if(inpu===p4Name){
+            p4.push("A");}
+       else if(inpu===p5Name){
+            p5.push("A");}
+       else if(inpu===p6Name){
+            p6.push("A");}
+       else if(inpu===p7Name){
+            p7.push("A");}
+       else if(inpu===p8Name){
+            p8.push("A");}
+       else if(inpu===p9Name){
+            p9.push("A");}
+       else if(inpu===p10Name){
+            p10.push("A");}
+      let perc1=[];
+
+function calculate(){
+      count1=p1.filter(item => item === "P").length;
+      count2=p1.length;
+      percentage1=(count1/count2)*100;
+      count3=p2.filter(item => item === "P").length;
+      count4=p2.length;
+      percentage2=(count3/count4)*100;
+      count5=p3.filter(item => item === "P").length;
+      count6=p3.length;
+      percentage3=(count5/count6)*100;
+      count7=p4.filter(item => item === "P").length;
+      count8=p4.length;
+      percentage4=(count7/count8)*100;
+      count9=p5.filter(item => item === "P").length;
+      count10=p5.length;
+      percentage5=(count9/count10)*100;
+      count11=p6.filter(item => item === "P").length;
+      count12=p6.length;
+      percentage6=(count11/count12)*100;
+      count13=p7.filter(item => item === "P").length;
+      count14=p7.length;
+      percentage7=(count13/count14)*100;
+      count15=p8.filter(item => item === "P").length;
+      count16=p8.length;
+      percentage8=(count15/count16)*100;
+      count17=p9.filter(item => item === "P").length;
+      count18=p9.length;
+      percentage9=(count17/count18)*100;
+      count19=p10.filter(item => item === "P").length;
+      count20=p10.length;
+      percentage10=(count19/count20)*100;
+      perc1.push(percentage1);
+      perc1.push(percentage2);
+      perc1.push(percentage3);
+      perc1.push(percentage4);
+      perc1.push(percentage5);
+      perc1.push(percentage6);
+      perc1.push(percentage7);
+      perc1.push(percentage8);
+      perc1.push(percentage9);
+      perc1.push(percentage10);  
+      
+      return perc1 ;
+      }
+document.getElementById("sub1").innertext=calculate(perc1[0]);
+document.getElementById("sub2").innertext=calculate(perc1[1]);
+document.getElementById("sub3").innertext=calculate(perc1[2]);
+document.getElementById("sub4").innertext=calculate(perc1[3]);
+document.getElementById("sub5").innertext=calculate(perc1[4]);
+document.getElementById("sub6").innertext=calculate(perc1[5]);
+document.getElementById("sub7").innertext=calculate(perc1[6]);
+document.getElementById("sub8").innertext=calculate(perc1[7]);
+document.getElementById("sub9").innertext=calculate(perc1[8]);
+document.getElementById("sub10").innertext=calculate(perc1[9]);
+            
+      
+      
       
       
 
