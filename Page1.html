@@ -207,12 +207,19 @@
       <button onclick=add1() class="btn p">P</button>
       <button onclick=add1() class="btn a">A</button>
     </td></tr></table><br>
+<div>
+<h2>Percentage for each subject:</h2>
+<table border=1 width=300 height=100><tr><th class="hi">p1</th><th class="hi">p2</th><th class="hi">p3</th><th class="hi">p4</th><th class="hi">p5</th><th class="hi">p6</th><th class="hi">p7</th><th class="hi">p8</th><th class="hi">p9</th><th class="hi">p10</th></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+</div>
 <script>
 const storedString = localStorage.getItem("subjects");
 const List = JSON.parse(storedString);
 let inpu = document.querySelector("#inp").value.trim();
 if (!List.includes(inpu)){
       alert("Not a valid Subject");}
+const element = document.querySelectorAll(".hi");
 let p1=List[0];
 let p2=List[1];
 let p3=List[2];
@@ -223,13 +230,13 @@ let p7=List[6];
 let p8=List[7];
 let p9=List[8];
 let p10=List[9];
+element.forEach((el, i) => {
+  if (i < List.length) {
+    el.innerText = List[i];  
+  }
+});
 </script>
-<div>
-<h2>Percentage for each subject:</h2>
-<table border=1 width=300 height=100><tr><th>p1</th><th>p2</th><th>p3</th><th>p4</th><th>p5</th><th>p6</th><th>p7</th><th>p8</th><th>p9</th><th>p10</th></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
 
-</div>
       
 </body>
 </html>
