@@ -220,21 +220,17 @@ let inpu = document.querySelector("#inp").value.trim();
 if (!List.includes(inpu)){
       alert("Not a valid Subject");}
 const element = document.querySelectorAll(".hi");
-let p1=List[0];
-let p2=List[1];
-let p3=List[2];
-let p4=List[3];
-let p5=List[4];
-let p6=List[5];
-let p7=List[6];
-let p8=List[7];
-let p9=List[8];
-let p10=List[9];
-element.forEach((el, i) => {
-  if (i < List.length) {
-    el.innerText = List[i];  
-  }
-});
+element[0].innerText=List[0];
+element[1].innerText=List[1];
+element[2].innerText=List[2];
+element[3].innerText=List[3];
+element[4].innerText=List[4];
+element[5].innerText=List[5];
+element[6].innerText=List[6];
+element[7].innerText=List[7];
+element[8].innerText=List[8];
+element[9].innerText=List[9];
+
 </script>
 
       
