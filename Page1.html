@@ -214,6 +214,18 @@
 
 </div>
 <script>
+let docs=document.querySelectorAll(".inp");
+elements[0].innerText=List[0];
+elements[1].innerText=List[1];
+elements[2].innerText=List[2];
+elements[3].innerText=List[3];
+elements[4].innerText=List[4];
+elements[5].innerText=List[5];
+elements[6].innerText=List[6];
+elements[7].innerText=List[7];
+elements[8].innerText=List[8];
+localStorage.setItem("subjects", JSON.stringify(elements));
+
 window.onload = function() {
  const storedString = localStorage.getItem("subjects");
  if (storedString) {
