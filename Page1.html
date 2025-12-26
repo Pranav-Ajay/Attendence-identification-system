@@ -213,7 +213,7 @@
 <div>
 <h2>Percentage for each subject:</h2>
 <table border=1 width=300 height=100><tr><th class="hi">p1</th><th class="hi">p2</th><th class="hi">p3</th><th class="hi">p4</th><th class="hi">p5</th><th class="hi">p6</th><th class="hi">p7</th><th class="hi">p8</th><th class="hi">p9</th><th class="hi">p10</th></tr>
-        <tr><td id="sub1"></td><td id="sub2"></td><td id="sub3"></td><td id="sub4"></td><td id="sub5"></td><td id="sub6"></td><td id="sub7"></td><td id="sub8"></td><td id="sub9"></td><td id="sub10"></td></tr></table>
+        <tr><td id="sub1"></td><td id="sub2"></td><td id="sub3"></td><td id="sub4"></td><td id="sub5"></td><td id="sub6"></td><td id="sub7"></td><td id="sub8"></td><td id="sub9"></td></tr></table>
 
 </div>
 <script>
@@ -232,7 +232,6 @@ element[5].innerText=List[5];
 element[6].innerText=List[6];
 element[7].innerText=List[7];
 element[8].innerText=List[8];
-element[9].innerText=List[9];
 let p1=List[0];
 let p2=List[1];
 let p3=List[2];
@@ -242,7 +241,6 @@ let p6=List[5];
 let p7=List[6];
 let p8=List[7];
 let p9=List[8];
-let p10=List[9];
 let p1=[];
 let p2=[];
 let p3=[];
@@ -252,7 +250,6 @@ let p6=[];
 let p7=[];
 let p8=[];
 let p9=[];
-let p10=[];
 
 function add1(){
       const inputs = document.querySelectorAll(".inp");
@@ -275,9 +272,7 @@ function add1(){
        else if(inpu===p8Name){
             p8.push("P");}
        else if(inpu===p9Name){
-            p9.push("P");}
-       else if(inpu===p10Name){
-            p10.push("P");}}
+            p9.push("P");}}
 
 function add2(){
       const inputs = document.querySelectorAll(".inp");
@@ -300,9 +295,8 @@ function add2(){
        else if(inpu===p8Name){
             p8.push("A");}
        else if(inpu===p9Name){
-            p9.push("A");}
-       else if(inpu===p10Name){
-            p10.push("A");}
+            p9.push("A");}}
+       }
 
 document.getElementById("les").innertext=p1;
 document.getElementById("les").innertext=p2;
@@ -313,8 +307,6 @@ document.getElementById("les").innertext=p6;
 document.getElementById("les").innertext=p7;
 document.getElementById("les").innertext=p8;
 document.getElementById("les").innertext=p9;
-document.getElementById("les").innertext=p10;
-
 
 function calculate1(){
       count1=p1.filter(item => item === "P").length;
@@ -361,11 +353,6 @@ function calculate9(){
       count18=p9.length;
       percentage9=(count17/count18)*100;
       return percentage9;}
-function calculate10(){
-      count19=p10.filter(item => item === "P").length;
-      count20=p10.length;
-      percentage10=(count19/count20)*100;
-      return percentage10;}
       
 document.getElementById("sub1").innertext=calculate1();
 document.getElementById("sub2").innertext=calculate2();
@@ -376,8 +363,6 @@ document.getElementById("sub6").innertext=calculate6();
 document.getElementById("sub7").innertext=calculate7();
 document.getElementById("sub8").innertext=calculate8();
 document.getElementById("sub9").innertext=calculate9();
-document.getElementById("sub10").innertext=calculate10();
-            
       
       
       
