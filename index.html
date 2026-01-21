@@ -216,9 +216,10 @@
 </div>
 <script>
 function save(){
-let docs=document.querySelectorAll(".inp");
-console.log("docs").innerhtml;
-localStorage.setItem("subjects", JSON.stringify(docs));}
+ let docs=document.querySelectorAll(".inp");
+ let values = Array.from(docs).map(input => input.value);
+ console.log(values);
+ localStorage.setItem("subjects", JSON.stringify(values));}
 
 window.onload = function() {
  const storedString = localStorage.getItem("subjects");
